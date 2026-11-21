@@ -23,3 +23,6 @@ jobs:
 
       - name: Run PyTest
         run: python -m pytest
+
+      - name: Build Docker image
+        run: docker build -t flask-app:v1 .
